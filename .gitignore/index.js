@@ -4,10 +4,14 @@ const bot = new Discord.Client();
 const PREFIX = "<"
 const prefix = "<"
 
-bot.login(process.env.TOKEN);
+bot.login("MzA4MzIyMjY3MzU0NjI4MDk3.XRkjxw.ZYhuHJDkTnEK_clxJn6eeHnLwiI");
 
 bot.on("ready", function() {
     console.log("Pret !");
+});
+
+bot.on("ready", function() {
+  bot.user.setGame("𝗦𝗵𝗶𝗿𝗼 𝗦𝗲𝗹𝗳𝗕𝗼𝘁 🐟", "https://www.twitch.tv/tfue");
 });
 
 bot.on("message", async message => {
